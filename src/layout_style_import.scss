@@ -1,0 +1,49 @@
+
+$text: white;
+$padding: 20px 22px;
+$text-alng:center;
+
+.container-b{
+    color:$text;
+    $base-color: purple;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    
+
+    & .box{
+        padding: $padding;
+        text-align:$text-alng;
+        max-width: 100px;
+        border-radius: 5%;
+    }
+    & .text{
+        color:black;
+    }
+    & .prim{
+        font-family: 'Times New Roman', serif;
+        font-size: 15px;
+    }
+    & .second{
+        font-family: 'Franklin Gothic Medium';
+        font-size: 12px;
+    }
+    & .base-color {
+        background-color: $base-color;
+    }
+    & .darken-3{
+        background: darken($base-color, 30%);
+        color:darken($text, 30%);
+    }
+    & .lighten-3{
+        background: lighten($base-color, 30%);
+        color:darken($text, 30%);
+    }
+    & .shadow{
+        -webkit-box-shadow: -12px 5px 14px -3px rgba(0,0,0,0.75);
+        -moz-box-shadow: -12px 5px 14px -3px rgba(0,0,0,0.75);
+        box-shadow: 8px 5px 14px -3px rgba(0,0,0,0.75);
+        text-shadow: 1.5px 0.5px grey;
+    }
+}
